@@ -7,8 +7,13 @@ name = "pypi"
 janome = "*"
 wordcloud = "*"
 matplotlib = "*"
+requests = "*"
 
 [dev-packages]
+black = "*"
 
 [requires]
 python_version = '3.7'
+
+[pipenv]
+allow_prereleases = true
