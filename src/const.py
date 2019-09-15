@@ -1,7 +1,16 @@
 from enum import Enum
 
 GAS_URL = "https://script.google.com/macros/s/AKfycbwMLo1rimAtKtKAelMtwjj2xNhm_nfp1jOWhTfa8XqfaTF0k4w/exec"
-EVENT_YEARS = (2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018)
+EVENT_YEARS = (
+    2011,
+    2012,  # 概要が短いので利用しないほうがいいかも
+    2013,  # 概要が短いので利用しないほうがいいかも
+    2014,
+    # 2015, # 使用しない、現在サイト側で公開されていない
+    2016,
+    2017,
+    # 2018, # なんかタグ付が違う
+)
 
 TOPIC_NAMES = (
     "Machine learning and data science",
@@ -32,11 +41,9 @@ class Language(Enum):
     EN = 2
     OTHER = 3
 
-LANGUAGE_STRING = {
-    Language.JA: "ja",
-    Language.EN: "en",
-    Language.OTHER: "other",
-}
+
+LANGUAGE_STRING = {Language.JA: "ja", Language.EN: "en", Language.OTHER: "other"}
+
 
 class ContentType(Enum):
     MACHINE_LEARNING_AND_DATA_SCIENCE = 1
